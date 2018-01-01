@@ -1,0 +1,29 @@
+
+<h3>Details about family members</h3>
+<div class="container p-y-3">
+  <div class="row">
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>#</th>
+                  <th>Member</th>
+                  <th>Age</th>
+                  <th>Relation</th>
+              </tr>
+          </thead>
+          <tbody>
+                  <tr *ngFor="let family of familys; 
+                  let idx = index">
+           <td>{{idx}}</td>
+           <td>{{family.Member}}</td>
+           <td>{{family.Age}}</td>
+           <td>{{family.Relation}}</td>
+                  </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+
+<p>
+  {{Family | json}}
+</p>

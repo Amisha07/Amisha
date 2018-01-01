@@ -1,0 +1,20 @@
+
+<p>
+  
+      This is what I'm all about. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>.
+    </p>
+    
+    <ul>
+      <li *ngFor="let goal of goals; let idx = index">
+        {{ goal }} - <a type="button" (click)="removeItem(idx)" class="btn btn-xs btn-danger">remove</a>
+      </li>
+    </ul>
+
+<br>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<a type="button" (click)="addItem()" class="btn btn-primary">AddItem
+</a>
+
+<!-- Indicates a successful or positive action -->
+<a type="button" (click)="removeItem(1)" class="btn btn-success">RemoveItem</a>

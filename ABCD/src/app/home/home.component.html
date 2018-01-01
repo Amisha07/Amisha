@@ -1,0 +1,23 @@
+
+<a (click) = "isShow = !isShow">
+   {{isShow ? 'Hide' :'Show '}} 
+  Family
+
+</a>
+
+<div *ngIf="isShow">
+  <family [familys]="Familys" ></family>
+  </div>
+  
+
+
+  <p>
+    
+      <a href="" (click)="sendMeHome()"><strong>Home Again</strong></a>.
+   </p>
+   
+   <ul>
+     <li *ngFor="let goal of goals">
+       {{ goal }}
+     </li>
+   </ul>
